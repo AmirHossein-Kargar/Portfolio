@@ -7,6 +7,7 @@ import {
   About,
   Route,
   Routes,
+  Projects
 } from "./Imports";
 
 export default function App() {
@@ -22,10 +23,11 @@ export default function App() {
       >
         <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        {/* <Projects/> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/projects" element={<Projects/>}/> */}
+          <Route path="/projects" element={<Projects/>}/>
           {/* <Route path="/contacts" element={<Contacts/>}/> */}
         </Routes>
       </div>
