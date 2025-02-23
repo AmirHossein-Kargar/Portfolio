@@ -9,6 +9,12 @@ body {
   color: #f3f4f6;
 }
 
+/* Disabled ScrollBar */
+body, html {
+  overflow: hidden;
+  height: 100%;
+}
+
 @layer utilities {
   @keyframes blink {
     0%,

@@ -7,7 +7,8 @@ import {
   About,
   Route,
   Routes,
-  Projects
+  Projects,
+  Contact
 } from "./Imports";
 
 export default function App() {
@@ -27,8 +28,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects/>}/>
-          {/* <Route path="/contacts" element={<Contacts/>}/> */}
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </div>
     </>
