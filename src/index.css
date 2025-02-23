@@ -10,10 +10,10 @@ body {
 }
 
 /* Disabled ScrollBar */
-body, html {
+/* body, html {
   overflow: hidden;
   height: 100%;
-}
+} */
 
 @layer utilities {
   @keyframes blink {

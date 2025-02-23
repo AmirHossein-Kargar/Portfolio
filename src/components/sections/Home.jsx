@@ -15,16 +15,16 @@ export default function Home() {
           Front-End Developer passionate about building clean, user-friendly
           websites. Let’s create something amazing together
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-4 max-sm:flex-col max-sm:gap-4 max-sm:items-center">
           <Link
             to="/projects"
-            className="relative bg-blue-800 text-white py-2.5 px-5 rounded-lg font-normal text-sm transition-all overflow-hidden before:absolute before:top-0 before:left-[-100%] before:w-full before:h-full before:bg-white/10 before:transition-all before:duration-300 hover:before:left-0 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)]"
+            className="max-sm:mr-0 max-sm:w-40 relative bg-blue-800 text-white py-2.5 px-5 rounded-lg font-normal text-sm transition-all overflow-hidden before:absolute before:top-0 before:left-[-100%] before:w-full before:h-full before:bg-white/10 before:transition-all before:duration-300 hover:before:left-0 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)]"
           >
             View Projects
           </Link>
           <Link
             to="/contact"
-            className="relative border border-blue-500 text-blue-500 py-2.5 px-5 rounded-lg font-normal text-sm transition-all overflow-hidden before:absolute before:top-0 before:left-[-100%] before:w-full before:h-full before:bg-blue-500/10 before:transition-all before:duration-300 hover:before:left-0 hover:shadow-[0_0_10px_rgba(37,99,235,0.2)]"
+            className="relative max-sm:w-40 border border-blue-500 text-blue-500 py-2.5 px-5 rounded-lg font-normal text-sm transition-all overflow-hidden before:absolute before:top-0 before:left-[-100%] before:w-full before:h-full before:bg-blue-500/10 before:transition-all before:duration-300 hover:before:left-0 hover:shadow-[0_0_10px_rgba(37,99,235,0.2)]"
           >
             Contact Me
           </Link>

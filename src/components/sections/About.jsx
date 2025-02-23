@@ -1,13 +1,15 @@
 import { GraduationCap, Code, Translate } from "@phosphor-icons/react";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+// eslint-disable-next-line react-refresh/only-export-components
 export const frontSkills = [
-   "HTML",
-   "CSS",
-   "JavaScript",
-   "React",
-   "TypeScript",
-   "Tailwind-CSS",
-   "SASS",
- ];
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "TypeScript",
+  "Tailwind-CSS",
+  "SASS",
+];
 export default function About() {
   //   const backSkills = []
 
@@ -21,7 +23,7 @@ export default function About() {
           About Me
         </h2>
 
-        <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all duration-200">
+        <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all duration-200 max-sm:text-center">
           <p className="text-gray-300 mb-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             culpa, nulla sunt ab maiores nam? Reiciendis dolor perspiciatis sint
@@ -29,12 +31,12 @@ export default function About() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all max-sm:flex max-sm:flex-col max-sm:items-center">
               <div className="flex gap-2 items-center mb-4">
                 <Code size={20} />
                 <h3 className="text-lg font-bold">Frontend</h3>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 max-sm:justify-center">
                 {frontSkills.map((skill, key) => {
                   return (
                     <span
@@ -66,7 +68,7 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-          <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all duration-200">
+          <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all duration-200 max-sm:flex max-sm:flex-col max-sm:items-center">
             <div className="flex gap-2 items-center mb-4">
               <GraduationCap size={20} weight="duotone" />
               <h3 className="text-lg font-bold">Education</h3>
@@ -80,7 +82,7 @@ export default function About() {
               </li>
             </ul>
           </div>
-          <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all duration-200">
+          <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all duration-200 max-sm:flex max-sm:flex-col max-sm:items-center">
             <div className="flex gap-2 items-center mb-4">
               <Translate size={20} />
               <h3 className="text-lg font-bold">Languages</h3>
@@ -89,10 +91,16 @@ export default function About() {
               <div>
                 <ul className="list-disc list-inside text-gray-300 space-y-2">
                   <li>
-                    <strong className="font-semibold">Persian (Native)</strong>
+                    <strong className="font-semibold">
+                      Persian (Native & Fluent)
+                    </strong>
+                    <span className="fi fi-ir ml-4"></span>
                   </li>
                   <li>
-                    <strong className="font-semibold">English (Native)</strong>
+                    <strong className="font-semibold">
+                      English (Intermediate)
+                    </strong>
+                    <span className="fi fi-us ml-4"></span>
                   </li>
                 </ul>
               </div>

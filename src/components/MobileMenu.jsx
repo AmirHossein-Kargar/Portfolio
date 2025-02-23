@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 /* eslint-disable react/prop-types */
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   const handleCloseMenu = () => {
@@ -21,42 +23,42 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         &times;
       </button>
 
-      <a
-        href="#home"
+      <Link
+        to="/"
         onClick={handleCloseMenu}
         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
           ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
           `}
       >
         Home
-      </a>
-      <a
-        href="#about"
+      </Link>
+      <Link
+        to="/about"
         onClick={handleCloseMenu}
         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
           ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
           `}
       >
         About
-      </a>
-      <a
-        href="#projects"
+      </Link>
+      <Link
+        to="/projects"
         onClick={handleCloseMenu}
         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
           ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
           `}
       >
         Projects
-      </a>
-      <a
-        href="#contact"
+      </Link>
+      <Link
+        to="/contact"
         onClick={handleCloseMenu}
         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
           ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
           `}
       >
         Contact
-      </a>
+      </Link>
     </div>
   );
 };
