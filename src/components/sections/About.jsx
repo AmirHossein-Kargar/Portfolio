@@ -10,24 +10,22 @@ export const frontSkills = [
   "Tailwind-CSS",
   "SASS",
 ];
+const aboutMeDec =
+  "A passionate Front-End Developer specializing in React, JavaScript, and modern UI technologies. I focus on creating clean, responsive, and user-friendly web applications. I’m always eager to learn and collaborate to build the next big thing!";
 export default function About() {
-  //   const backSkills = []
-
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-3xl mx-auto px-4 mt-8">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           About Me
         </h2>
 
         <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all duration-200 max-sm:text-center">
           <p className="text-gray-300 mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            culpa, nulla sunt ab maiores nam? Reiciendis dolor perspiciatis sint
-            qui.
+            {aboutMeDec}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

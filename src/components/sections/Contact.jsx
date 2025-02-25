@@ -1,6 +1,7 @@
 import toast, { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { Coffee, GithubLogo, LinkedinLogo, ReadCvLogo, TelegramLogo } from "@phosphor-icons/react";
 
 export default function Contact() {
   // * clear input after submit
@@ -28,7 +29,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center py-20">
+    <section className="min-h-screen flex flex-col items-center justify-center py-20">
       <div className="px-4 w-150">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           Get In Touch
@@ -94,7 +95,15 @@ export default function Contact() {
             },
           }}
         />
+      <div className="mt-8 flex justify-between ">
+      <a className="text-xs flex flex-col items-center gap-2 hover:font-semibold transition" href="https://www.linkedin.com/in/amirkargar/"><LinkedinLogo size={30} className="text-cyan-500" />Linkedin</a>
+      <a className="text-xs flex flex-col items-center gap-2 hover:font-semibold transition" href="https://github.com/AmirHossein-Kargar"><GithubLogo size={30}  />Github</a>
+      <a className="text-xs flex flex-col items-center gap-2 hover:font-semibold transition" href="https://drive.google.com/file/d/1qUt-tY9HnUbC_C1YV579izSeTpC_g0By/view?usp=drive_link"><ReadCvLogo size={30} className="text-emerald-500" />Online CV</a>
+      <a className="text-xs flex flex-col items-center gap-2 hover:font-semibold transition" href="https://t.me/AmirKargaar"><TelegramLogo size={30} className="text-blue-500" />Telegram</a>
+      <a className="text-xs flex flex-col items-center gap-2 hover:font-semibold transition" href=""><Coffee size={30} className="text-[#6F4E37]" />Buy me a coffee</a>
       </div>
+      </div>
+      
     </section>
   );
 }
